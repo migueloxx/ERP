@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ERP 2DAM - Editar cliente</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    	<div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Inicio</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Buscar...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Productos<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="prod_list.php">Listar</a>
+                                </li>
+                                <li>
+                                    <a href="Prod_edit.php">Editar</a>
+                                </li>
+                                <li>
+                                    <a href="Prod_insert.html">Insertar</a>
+                                </li>
+                                <li>
+                                    <a href="Prod_delete.php">Borrar</a>
+                                </li>
+                             
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-edit fa-fw"></i> Clientes<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="cust_list.php">Listar</a>
+                                </li>
+                                <li>
+                                    <a href="cust_edit.php">Editar</a>
+                                </li>
+                                <li>
+                                    <a href="cust_insert.php">Insertar</a>
+                                </li>
+                                <li>
+                                    <a href="cust_delete.php">Borrar</a>
+                                </li>
+                             
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+						
+						<li>
+                            <a href="#"><i class="fa fa-table fa-fw"></i> Pedidos<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="pedidolista.php">Listar</a>
+                                </li>
+                                <li>
+                                    <a href="editarpedido.php">Editar</a>
+                                </li>
+                                <li>
+                                    <a href="nuevopedido.php">Insertar</a>
+                                </li>
+								<li>
+                                    <a href="confirmarpedido.php">Confirmar</a>
+                                </li>
+                                <li>
+                                    <a href="pedidodelete.php">Borrar</a>
+                                </li>
+                             
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+						
+						<li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Ventas<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="sales_list.php">Listar</a>
+                                </li>
+                                <li>
+                                    <a href="sales_graph.php">Gráficos</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-pencil fa-fw"></i> Recurso Humanos<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="employ_list.html">Listar</a>
+                                </li>
+                                <li>
+                                    <a href="employ_edit.html">Editar</a>
+                                </li>
+                                <li>
+                                    <a href="employ_insert.html">Insertar</a>
+                                </li>
+								<li>
+                                    <a href="employ_print.html">Imprimir</a>
+                                </li>
+                                <li>
+                                    <a href="employ_delete.html">Borrar</a>
+                                </li>
+								<li>
+                                    <a href="employ_config.html">Configuracion</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+       
+        </nav>
+	
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header"><b>Empresa a editar</b></h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+				<div class="row">
+				
+					<div class="col-lg-12">
+						<div class="panel panel-info">
+
+						<div class="panel-body">
+				
+							<div class="row">
+
+								<div class="col-lg-6">
+								
+									<?php
+										$row = [];
+										$basedatos = "erpdb";
+				
+										$link = mysqli_connect("localhost", "root", "", $basedatos);
+											
+										if (isset ($_POST['buscar'])) {
+									
+											$basedatos = "erpdb";
+				
+										$link = mysqli_connect("localhost", "root", "", $basedatos);
+
+											$query = 'SELECT * FROM clientes WHERE Nombre_empresa = "'. $_POST['nombreEmpresa']. '"';
+										
+											if (mysqli_query($link,$query)) {
+												$result = mysqli_query($link,$query);
+												$row = $result->fetch_assoc();
+											} else{
+												echo "<script>alert(\"No se han encontrado datos\");</script>";	
+											}												
+										}
+										
+									
+										if(isset($_POST['actualizar'])){
+												$id=htmlspecialchars($_POST['id']);
+												$nombre=htmlspecialchars($_POST['nombre']);
+												$apellido=htmlentities($_POST['apellido']);
+											if($_POST['logo']!= null){
+												$logo=str_replace(' ', '_', $_POST['logo']);
+											}else{
+												$logo ="NoPhoto.jpg";
+											}
+												$empresa=htmlentities($_POST['empresa']);
+												$direccion=str_replace(' ', '_', $_POST['direccion']);
+												$telefono=htmlspecialchars($_POST['telefono']);
+												$email=addslashes(htmlspecialchars($_POST['email']));
+												
+												validar($id, $nombre, $apellido, $logo, $empresa, $direccion, $telefono, $email);
+										}
+			
+										function validar($id, $nombre, $apellido, $logo, $empresa, $direccion, $telefono, $email){
+					
+											$basedatos = "erpdb";
+				
+											$link = mysqli_connect("localhost", "root", "", $basedatos);
+											// creamos el UPDATE sobre la tabla 
+											$query = "UPDATE `clientes` SET `Id_cliente`= $id,
+											`Nombre_cliente`=\"$nombre\",
+											`Apellido_cliente`=\"$apellido\",
+											`Logo_empresa`= \"$logo\",
+											`Nombre_empresa`=\"$empresa\",
+											`Direccion`=\"$direccion\",
+											`Telefono`= $telefono,
+											`Email`=\"$email\" WHERE Id_cliente = $id";
+					
+									
+										if (mysqli_query($link,$query)) {
+											echo "<script>alert(\"Actualizado Correctamente\");</script>";								
+										}
+			
+										}
+			
+										echo "<br/><br/>\n";
+									?>
+								
+								
+								<h4><b>Escriba la empresa</b></h4>
+									<form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+												<div class="form-group input-group">
+											<input type="text" class="form-control" name="nombreEmpresa">
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="submit" name="buscar">
+													<i class="fa fa-search">  Buscar </i>
+												</button>
+											</span>
+										</div>
+										<div class="form-group">
+											
+											<input class="form-control" type="hidden" name="id" value="<?php if(isset($row['Id_cliente'])) echo $row['Id_cliente']; ?>" >
+										</div>
+										<div class="form-group">
+											<label>Nombre</label>
+											<input class="form-control" type="text" name="nombre" value="<?php if(isset($row['Nombre_cliente'])) echo $row['Nombre_cliente']; ?>">
+										</div>
+										<div class="form-group">
+											<label>Apellido</label>
+											<input class="form-control" type="text" name="apellido" value="<?php if(isset($row['Apellido_cliente'])) echo $row['Apellido_cliente']; ?>">
+										</div>
+										<div class="form-group">								
+											<label>Logo Empresa</label>
+											<input type="file" type="img" name="logo" value="<?php if(isset($row['Logo_empresa'])) echo $row['Logo_empresa']; ?>">
+										</div>
+										<div class="form-group">
+											<label>Nombre Empresa</label>
+											<input class="form-control" type="text" name="empresa" value="<?php if(isset($row['Nombre_empresa'])) echo $row['Nombre_empresa']; ?>">
+										</div>
+										<div class="form-group">
+											<label>Dirección</label>
+											<input class="form-control" type="text" name="direccion" value="<?php if(isset($row['Direccion'])) echo $row['Direccion']; ?>">
+										</div>
+										<div class="form-group">
+											<label>Teléfono</label>
+											<input class="form-control" type="numeric" name="telefono" value="<?php if(isset($row['Telefono'])) echo $row['Telefono']; ?>">
+										</div>
+										<div class="form-group">
+											<label>Email</label>
+											<input class="form-control" type="email" name="email" value="<?php if(isset($row['Email'])) echo $row['Email']; ?>">
+										</div>
+										<button type="submit" class="btn btn-primary" name="actualizar">Actualizar</button>
+									</form>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
